@@ -1,0 +1,23 @@
+en:
+  name: 'Name'
+  from: 'From'
+  to: 'To'
+  full_day: 'Full day'
+  description: 'Description'
+
+  add_resource: "Add %{name}"
+  new_resource: "New %{name}"
+  edit_resource: "Edit %{name}"
+  remove_resource: "Remove %{name}"
+  save_resource: "Save %{name}"
+
+  event: 'Event'
+  reminder: 'Reminder'
+
+  back: 'Back'
+
+  minutes: 'minutes'
+  hour: 'hour'
+  hours: 'hours'
+  day: 'day'
+  days: 'days'

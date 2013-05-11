@@ -1,7 +1,7 @@
 module Adjourn
   class Reminder < ActiveRecord::Base
     # constants
-    OPTIONS = [['10 minutes', 10], ['15 minutes', 15], ['20 minutes', 20], ['25 minutes', 25], ['30 minutes', 30], ['45 minutes', 45], ['1 hour', 60], ['2 hour', 120], ['3 hour', 180], ['1 day', 720], ['2 day', 1440]]
+    OPTIONS = [["10 #{I18n.t(:minutes)}", 10], ["15 #{I18n.t(:minutes)}", 15], ["20 #{I18n.t(:minutes)}", 20], ["25 #{I18n.t(:minutes)}", 25], ["30 #{I18n.t(:minutes)}", 30], ["45 #{I18n.t(:minutes)}", 45], ["1 #{I18n.t(:hour)}", 60], ["2 #{I18n.t(:hours)}", 120], ["3 #{I18n.t(:hours)}", 180], ["1 #{I18n.t(:day)}", 720], ["2 #{I18n.t(:days)}", 1440]]
     
     # relations
     belongs_to :event

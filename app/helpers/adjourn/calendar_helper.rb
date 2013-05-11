@@ -6,7 +6,7 @@ module Adjourn
     end
 
     class Calendar < Struct.new(:view, :date, :callback)
-      HEADER = %w[Domingo Lunes Martes Miercoles Jueves Viernes Sabado]
+      HEADER = I18n.t('date.day_names'.to_sym)
       START_DAY = :sunday
 
       delegate :content_tag, to: :view

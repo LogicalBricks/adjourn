@@ -1,4 +1,4 @@
-<h1>Listing events</h1>
+<h1><%= t(:event).pluralize %></h1>
 
 <div id="adjourn">
   <%= calendar do |date| %>
@@ -13,4 +13,4 @@
   <% end %>
 </div>
 
-<%= link_to 'New Event', new_event_path %>
+<%= link_to t(:new_resource, name: t(:event)), new_event_path %>

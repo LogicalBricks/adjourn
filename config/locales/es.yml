@@ -1,0 +1,26 @@
+es:
+  name: 'Nombre'
+  from: 'De'
+  to: 'Hasta'
+  full_day: 'Todo el día'
+  description: 'Descripción'
+
+  add_resource: "Agregar %{name}"
+  new_resource: "Nuevo %{name}"
+  edit_resource: "Editar %{name}"
+  remove_resource: "Eliminar %{name}"
+  save_resource: "Guardar %{name}"
+
+  event: 'Evento'
+  reminder: 'Recordatorio'
+
+  back: 'Regresar'
+
+  minutes: 'minutos'
+  hour: 'hora'
+  hours: 'horas'
+  day: 'día'
+  days: 'días'
+
+  date:
+    day_names: ['Domingo', 'Lunes', 'Martes', 'Miércoles', 'Jueves', 'Viernes', 'Sábado']
