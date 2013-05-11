@@ -1,0 +1,16 @@
+<h1>Listing events</h1>
+
+<div id="adjourn">
+  <%= calendar do |date| %>
+    <%= date.day %>
+    <% if @events_by_date[date] %>
+      <ul>
+        <% @events_by_date[date].each do |event| %>
+          <li><%= event.name %></li>
+        <% end %>
+      </ul>
+    <% end %>
+  <% end %>
+</div>
+
+<%= link_to 'New Event', new_event_path %>
