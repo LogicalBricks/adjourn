@@ -10,7 +10,7 @@ module Adjourn
     accepts_nested_attributes_for :reminders
 
     # validations
-    validates_presence_of :from_date, :to_date, :description
+    validates_presence_of :name, :from_date, :to_date
     validates_presence_of :from_time, :to_time, unless: :full_day?
 
     # scopes

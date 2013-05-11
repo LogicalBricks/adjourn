@@ -5,9 +5,9 @@ module Adjourn
 
     it { should belong_to :user  }
     it { should have_many :reminders  }
+    it { should validate_presence_of :name  }
     it { should validate_presence_of :from_date  }
     it { should validate_presence_of :to_date  }
-    it { should validate_presence_of :description  }
 
     context 'if full_day' do
       before { subject.stub(:full_day).and_return true }

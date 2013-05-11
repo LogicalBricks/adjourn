@@ -25,11 +25,11 @@
   </div>
   <div class="field">
     <%= f.label :from_time %><br />
-    <%= f.time_select :from_time %>
+    <%= f.time_select :from_time, { minute_step: 5, ampm: true } %>
   </div>
   <div class="field">
     <%= f.label :to_time %><br />
-    <%= f.time_select :to_time %>
+    <%= f.time_select :to_time, { minute_step: 5, ampm: true } %>
   </div>
   <div class="field">
     <%= f.label :full_day %><br />
@@ -43,7 +43,7 @@
   <h2>Reminders</h2>
 
   <%= f.fields_for :reminders do |reminder_form| %>
-    <%= reminder_form.select :minutes_before, options_for_select(Adjourn::Reminder::OPTIONS) %>
+    <%= reminder_form.select :minutes_before, Adjourn::Reminder::OPTIONS %>
     <%= reminder_form.link_to_remove 'Remove reminder' %>
   <% end %>
   <%= f.link_to_add 'Add reminder', :reminders %>
