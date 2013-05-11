@@ -4,6 +4,7 @@ module Adjourn
   describe Event do
 
     it { should belong_to :user  }
+    it { should have_many :reminders  }
     it { should validate_presence_of :from_date  }
     it { should validate_presence_of :to_date  }
     it { should validate_presence_of :description  }

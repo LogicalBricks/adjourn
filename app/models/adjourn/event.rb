@@ -2,6 +2,7 @@ module Adjourn
   class Event < ActiveRecord::Base
     # relations
     belongs_to :user, class_name: Adjourn.user_class
+    has_many :reminders
 
     # accessors
     attr_accessible :description, :from_date, :from_time, :full_day, :name, :to_date, :to_time

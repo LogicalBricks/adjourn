@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Minutes before:</b>
+  <%= @reminder.minutes_before %>
+</p>
+
+<p>
+  <b>Event:</b>
+  <%= @reminder.event %>
+</p>
+
+
+<%= link_to 'Edit', edit_reminder_path(@reminder) %> |
+<%= link_to 'Back', reminders_path %>
