@@ -2,7 +2,6 @@ PATH
   remote: .
   specs:
     adjourn (0.0.1)
-      nested_form
       rails (~> 3.2.13)
       sass-rails
 
