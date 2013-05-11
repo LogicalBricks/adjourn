@@ -30,6 +30,7 @@ module Adjourn
     # GET /events/new.json
     def new
       @event = Event.new
+      @event.reminders << Reminder.new
   
       respond_to do |format|
         format.html # new.html.erb

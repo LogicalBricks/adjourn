@@ -2,6 +2,7 @@ PATH
   remote: .
   specs:
     adjourn (0.0.1)
+      nested_form
       rails (~> 3.2.13)
       sass-rails
 
@@ -71,6 +72,7 @@ GEM
     method_source (0.8.1)
     mime-types (1.23)
     multi_json (1.7.3)
+    nested_form (0.3.2)
     nokogiri (1.5.9)
     orm_adapter (0.4.0)
     polyglot (0.3.3)
@@ -148,6 +150,7 @@ DEPENDENCIES
   devise
   factory_girl_rails
   jquery-rails
+  nested_form
   pry
   rspec-rails (~> 2.12)
   shoulda-matchers
