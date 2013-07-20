@@ -13,6 +13,10 @@ es:
 
   event: 'Evento'
   reminder: 'Recordatorio'
+  month: 'Mes'
+
+  next_resource: '%{name} Siguiente'
+  prev_resource: '%{name} Anterior'
 
   back: 'Regresar'
 

@@ -6,6 +6,7 @@ module Adjourn
     # GET /events.json
     def index
       # @events = Event.all
+      date_from_params
       @events = Event.where(user_id: current_user).all
       @events_by_date = @events.group_by(&:from_date)
   
@@ -86,6 +87,14 @@ module Adjourn
         format.html { redirect_to events_url }
         format.json { head :no_content }
       end
+    end
+
+    private
+
+    def date_from_params
+      @date = params[:date].nil? ? Date.today : Date.strptime(params[:date])
+    rescue
+      @date = Date.today
     end
   end
 end
